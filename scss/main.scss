@@ -1,0 +1,29 @@
+$enable-responsive-font-sizes: true !default;
+$enable-gradients: true !default;
+
+// Other colors from the pallete
+// gray E3E7E4
+// opaque fuccia 6B4B73
+
+$theme-colors: (
+	"primary": #57CDFF,
+	"secondary": #AEB482,
+	"info": #4781a7,
+	"success": #4eb881,
+	"warning": #cba849,
+	"danger": #f44336,
+	"dark": #4282A3,
+	"light": #F4F2F3
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body, html {
+	height: 100%
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// Layout styling 

@@ -1,0 +1,34 @@
+{
+  "name": "marketech",
+  "version": "1.0.0",
+  "description": "Landig page for Marketech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-prefix": "postcss --config postcss.config.js --replace \"assets/css/*.css\" \"assets/css/!*.min.css\"",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss assets/css/style.css",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output assets/css/style.min.css assets/css/style.css",
+    "build-css": "npm run css-compile && npm run css-prefix && npm run css-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rincorpes/marketech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rincorpes/marketech/issues"
+  },
+  "homepage": "https://github.com/Rincorpes/marketech#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "popper": "^1.0.1"
+  }
+}
