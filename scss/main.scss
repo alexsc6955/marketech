@@ -6,14 +6,14 @@ $enable-gradients: true !default;
 // opaque fuccia 6B4B73
 
 $theme-colors: (
-	"primary": #57CDFF,
-	"secondary": #AEB482,
-	"info": #4781a7,
-	"success": #4eb881,
-	"warning": #cba849,
+	"primary": #4180A7,
+	"secondary": #9CC9D2,
+	"info": #214D6E,
+	"success": #49a16a,
+	"warning": #c69132,
 	"danger": #f44336,
-	"dark": #4282A3,
-	"light": #F4F2F3
+	"dark": #010a11,
+	"light": #fcfcfd
 );
 
 @import '../node_modules/bootstrap/scss/bootstrap';
